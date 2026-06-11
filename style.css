@@ -120,6 +120,7 @@ h1 {
   margin: 16px 0 0;
   font-size: 0.96rem;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
 .links {

@@ -1,12 +1,12 @@
 const fallbackProfile = {
   siteTitle: "鮫島 歩 / SAMESHIMA Ayumu",
-  description: "教育事業家、SiiiScaleStudios代表。教育×XR×AI領域の体験開発に取り組んでいます。",
+  description: "教育×XR×AI領域の体験開発を専門とし、未来から逆算した教育環境と学習体験を次世代に届けることをミッションに活動。",
   eyebrow: "SiiiScaleStudios",
   name: "鮫島 歩 / SAMESHIMA Ayumu",
   title: "教育事業家｜SiiiScaleStudios 代表",
-  bio: "教育×XR×AI 領域の体験開発。未来から逆算した\"教育環境\"と\"学習体験\"を次世代の担い手へ。クラフトビールギーク。",
+  bio: "教育×XR×AI領域の体験開発を専門とし、「未来から逆算した教育環境と学習体験」を次世代に届けることをミッションに活動。\nクラフトビールギーク🍺",
   avatar: "assets/profile.jpg",
-  cover: "assets/cover.jpg",
+  cover: "assets/cover-abstract.jpg",
   copyText: "a.sameshima@siiiscalestudios.com",
   copyLabel: "メールアドレスをコピー",
   footer: "© 2026 SAMESHIMA Ayumu",
@@ -19,13 +19,13 @@ const fallbackProfile = {
   links: [
     {
       label: "X",
-      note: "日々の活動や関心領域",
+      note: "",
       url: "https://x.com/aym_same",
       type: "x"
     },
     {
       label: "Facebook",
-      note: "プロフィール・つながり",
+      note: "",
       url: "https://www.facebook.com/ayumu.sameshima",
       type: "facebook"
     },
