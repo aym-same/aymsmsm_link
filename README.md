@@ -1,8 +1,18 @@
-# QR Link Page
+# aymsmsm_link
 
-名刺裏のQRコードから案内するための、広告なし・無料ホスティング向けリンクまとめサイトです。
+鮫島 歩 / SAMESHIMA Ayumu のプロフィールリンクページです。
 
-## 編集する場所
+公開URL:
+
+https://aym-same.github.io/aymsmsm_link/
+
+## このリポジトリについて
+
+名刺裏のQRコードから案内するための、広告なし・無料ホスティング向け静的サイトです。
+
+サーバー処理やデータベースは使っていません。GitHub Pagesで `main` ブランチの `/(root)` を公開しています。
+
+## 編集するファイル
 
 普段編集するのは `profile.json` です。
 
@@ -11,89 +21,29 @@
 - `bio`: 紹介文
 - `avatar`: プロフィール画像
 - `cover`: 背景画像
-- `copyText`: コピーしたいメールアドレスなど
-- `theme.preset`: 雰囲気
+- `copyText`: コピー用メールアドレス
+- `links`: 表示するリンク
 - `theme.accentColor`: アクセントカラー
-- `theme.buttonStyle`: ボタンの見た目
-- `links`: 表示するリンク一覧
 
-## テーマ
+SNSやチャットアプリのプレビュー文言も整えたい場合は、`index.html` の `<title>`、`description`、`og:title`、`og:description` も同じ内容に更新します。
 
-`theme.preset` には以下を指定できます。
+## 公開上の注意
 
-- `minimal`: 名刺向けの上品な標準テーマ
-- `warm`: やわらかく親しみやすい雰囲気
-- `event`: 告知やSNS向けの少し華やかな雰囲気
-- `dark`: 黒基調の落ち着いた雰囲気
-- `japanese`: 和モダン寄りの雰囲気
+このリポジトリはPublicです。以下はインターネット上で誰でも見られます。
 
-`theme.buttonStyle` には以下を指定できます。
+- `profile.json` の内容
+- 掲載しているメールアドレス
+- `assets` 内の画像
+- Gitのコミット履歴
 
-- `solid`
-- `outline`
-- `soft`
+公開したくない個人情報、非公開資料、APIキー、パスワード、顧客情報は入れないでください。
 
-## リンク種別
+## GitHub Pages設定
 
-`links` の `type` には以下を指定できます。未指定でも表示されます。
+GitHubの `Settings > Pages` で以下を設定しています。
 
-- `website`
-- `instagram`
-- `facebook`
-- `x`
-- `youtube`
-- `tiktok`
-- `line`
-- `mail`
-- `form`
-- `map`
-- `shop`
-- `portfolio`
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/(root)`
 
-## 公開方法
-
-GitHub Pages、Cloudflare Pages、Netlify、Vercel などの静的サイトホスティングにそのまま配置できます。
-
-### GitHub Pages
-
-このリポジトリには GitHub Pages 用のワークフローを同梱しています。
-
-1. GitHubで新しいリポジトリを作成します。
-2. このフォルダをそのリポジトリへpushします。
-3. GitHubのリポジトリ画面で Settings > Pages を開きます。
-4. Source を `GitHub Actions` にします。
-5. `main` または `master` にpushすると公開されます。
-
-公開URLは通常、以下の形式です。
-
-```text
-https://ユーザー名.github.io/リポジトリ名/
-```
-
-独自ドメインを使う場合は、GitHub PagesのCustom domainにドメインを設定してください。
-
-### Cloudflare Pages
-
-Cloudflare Pagesで公開する場合は、Cloudflareのダッシュボードで以下の設定にします。
-
-- Framework preset: `None`
-- Build command: 空欄
-- Build output directory: `/`
-- Root directory: `/`
-
-このサイトはビルド不要の静的サイトなので、GitHub連携でpushするだけで公開できます。
-
-## ローカル確認
-
-`profile.json` を読み込むため、ブラウザで `index.html` を直接開くより、簡易サーバーで確認するのがおすすめです。
-
-```powershell
-node preview-server.js
-```
-
-その後、`http://localhost:8080` を開いてください。
-
-## OGP表示について
-
-SNSやチャットアプリで表示されるプレビュー文言は、サービスによってJavaScript実行前の `index.html` の内容を読むことがあります。
-必要に応じて `index.html` の `<title>`、`description`、`og:title`、`og:description` も `profile.json` と同じ内容に変更してください。
+変更をpushすると、数分後に公開ページへ反映されます。

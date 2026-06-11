@@ -101,7 +101,7 @@ function renderProfile(profile) {
   $("[data-footer]").textContent = profile.footer || "";
 
   const avatar = $("[data-avatar]");
-  avatar.src = profile.avatar || "assets/profile.svg";
+  avatar.src = profile.avatar || "assets/profile.jpg";
   avatar.alt = profile.name ? `${profile.name}のプロフィール画像` : "プロフィール画像";
 
   const cover = $("[data-cover]");
