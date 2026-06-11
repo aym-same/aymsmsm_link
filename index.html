@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Links</title>
+    <meta name="description" content="プロフィールとリンクをまとめたページです。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Links">
+    <meta property="og:description" content="プロフィールとリンクをまとめたページです。">
+    <meta property="og:image" content="assets/og-image.svg">
+    <meta name="theme-color" content="#1f6f68">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="site-shell" id="app" aria-live="polite">
+      <section class="profile" aria-label="プロフィール">
+        <div class="cover" data-cover>
+          <img class="avatar" data-avatar alt="">
+        </div>
+        <div class="identity">
+          <p class="eyebrow" data-eyebrow></p>
+          <h1 data-name>Links</h1>
+          <p class="title" data-title></p>
+          <p class="bio" data-bio></p>
+        </div>
+      </section>
+
+      <nav class="links" data-links aria-label="リンク一覧"></nav>
+
+      <section class="contact" data-contact hidden>
+        <button class="copy-button" type="button" data-copy>
+          <span data-copy-label></span>
+          <span class="copy-status" data-copy-status></span>
+        </button>
+      </section>
+
+      <footer class="footer" data-footer></footer>
+    </main>
+
+    <noscript>
+      <p class="noscript">このページを表示するにはJavaScriptを有効にしてください。</p>
+    </noscript>
+
+    <script src="app.js"></script>
+  </body>
+</html>
