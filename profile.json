@@ -1,38 +1,38 @@
 {
-  "siteTitle": "山田 太郎 | Links",
-  "description": "イベントプランナー山田太郎のプロフィールとリンク集です。",
-  "eyebrow": "EVENT PLANNING",
-  "name": "山田 太郎",
-  "title": "イベントプランナー / 企画制作",
-  "bio": "地域イベント、企業プロモーション、音楽イベントの企画制作をしています。名刺から来てくださった方は、下記リンクよりお気軽にご連絡ください。",
-  "avatar": "assets/profile.svg",
-  "cover": "assets/cover.svg",
-  "copyText": "info@example.com",
+  "siteTitle": "鮫島 歩 / SAMESHIMA Ayumu",
+  "description": "教育事業家、SiiiScaleStudios代表。教育×XR×AI領域の体験開発に取り組んでいます。",
+  "eyebrow": "SiiiScaleStudios",
+  "name": "鮫島 歩 / SAMESHIMA Ayumu",
+  "title": "教育事業家｜SiiiScaleStudios 代表",
+  "bio": "教育×XR×AI 領域の体験開発。未来から逆算した\"教育環境\"と\"学習体験\"を次世代の担い手へ。クラフトビールギーク。",
+  "avatar": "assets/profile.jpg",
+  "cover": "assets/cover.jpg",
+  "copyText": "a.sameshima@siiiscalestudios.com",
   "copyLabel": "メールアドレスをコピー",
-  "footer": "© 2026 Taro Yamada",
+  "footer": "© 2026 SAMESHIMA Ayumu",
   "theme": {
-    "preset": "minimal",
-    "accentColor": "#1f6f68",
+    "preset": "event",
+    "accentColor": "#176f7a",
     "accentContrast": "#ffffff",
-    "buttonStyle": "solid"
+    "buttonStyle": "soft"
   },
   "links": [
     {
-      "label": "公式サイト",
-      "note": "実績・サービス内容はこちら",
-      "url": "https://example.com",
-      "type": "website"
+      "label": "X",
+      "note": "日々の活動や関心領域",
+      "url": "https://x.com/aym_same",
+      "type": "x"
     },
     {
-      "label": "Instagram",
-      "note": "イベントの雰囲気を投稿しています",
-      "url": "https://instagram.com/",
-      "type": "instagram"
+      "label": "Facebook",
+      "note": "プロフィール・つながり",
+      "url": "https://www.facebook.com/ayumu.sameshima",
+      "type": "facebook"
     },
     {
       "label": "お問い合わせ",
-      "note": "企画相談・お仕事のご依頼",
-      "url": "mailto:info@example.com",
+      "note": "ご相談・ご依頼はこちら",
+      "url": "mailto:a.sameshima@siiiscalestudios.com",
       "type": "mail"
     }
   ]

@@ -39,6 +39,7 @@
 
 - `website`
 - `instagram`
+- `facebook`
 - `x`
 - `youtube`
 - `tiktok`
